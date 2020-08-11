@@ -69,33 +69,6 @@
     position: relative;
     margin-bottom: 23px;
 
-    &:before {
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-      content: '';
-      width: 17px;
-      height: 17px;
-      border: 0.5px solid #394247;
-      border-radius: 2px;
-    }
-
-    &:after {
-      position: absolute;
-      left: 5px;
-      top: 5px;
-      display: block;
-      content: '';
-      width: 9px;
-      height: 9px;
-      background-image: url(../images/agreement.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: $delay;
-      opacity: 0;
-    }
-
     &-checkbox {
       display: none;
 
@@ -116,6 +89,35 @@
 
       @media(max-width: 330px) {
         padding-top: 0;
+      }
+
+
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 0.5px solid #394247;
+        border-radius: 2px;
+      }
+
+      &:after {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        display: block;
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-image: url(../images/agreement.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $delay;
+        opacity: 0;
       }
     }
   }
