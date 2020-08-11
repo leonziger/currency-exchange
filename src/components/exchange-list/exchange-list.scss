@@ -1,0 +1,117 @@
+.exchange-list {
+  margin-top: 18px;
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: $delay;
+    margin-bottom: 11px;
+    min-width: 235px;
+
+    &:hover {
+      background: #F2F6FF;
+
+      .exchange-list__item-label {
+        &:before {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    @media(max-width: 575px) {
+      min-width: 150px;
+    }
+
+    @media(max-width: 414px) {
+      min-width: 100px;
+    }
+
+    &-name {
+      @media(max-width: 479px) {
+        display: none;
+      }
+    }
+
+    &-bank {
+      display: flex;
+      align-items: center;
+    }
+
+    &-label {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      width: 100%;
+
+      &:before {
+        opacity: 0;
+        position: absolute;
+        right: 9px;
+        top: 8px;
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: 3px solid #1C85E8;
+        border-radius: 50%;
+      }
+
+      &:after {
+        opacity: 0;
+        position: absolute;
+        right: 11px;
+        top: 10px;
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/check.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: $delay;
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 37px;
+      height: 37px;
+      background: #F2F2F2;
+      border-radius: 50%;
+      margin-right: 10px;
+
+      &-select {
+        display: none;
+      }
+    }
+
+    &-checkbox {
+      display: none;
+
+      &:checked {
+        + .exchange-list__item-label {
+          background: #F2F6FF;
+
+          &:before {
+            opacity: 1;
+          }
+
+          &:after {
+            opacity: 1;
+          }
+        }
+
+      }
+    }
+
+    &-remain {
+      text-align: right;
+    }
+  }
+}

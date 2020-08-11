@@ -1,0 +1,84 @@
+.auth-menu {
+
+  @media (max-width: 767px) {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    right: 9999px;
+    bottom: 9999px;
+    background-color: #fff;
+    opacity: 0;
+    margin: 0;
+    z-index: 200;
+    border: none;
+    min-width: 160px;
+    width: 50%;
+    text-align: center;
+    border-radius: 0;
+    transition: all 0s ease .35s, opacity .35s ease;
+
+    #auth {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      right: 0;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 100%;
+
+      @media(max-width: 399px) {
+        top: 10%;
+      }
+
+      & > ul {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        & > li {
+          padding: 0 20px;
+
+          &>a {
+            display: block;
+            padding: 15px 10px;
+            font-size: 18px;
+            text-decoration: none;
+
+            &:hover,
+            &:active {
+              text-decoration: none;
+              border-bottom: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      left: 50%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      opacity: 0.8;
+      transition: opacity .35s ease;
+      overflow-y: scroll;
+      z-index: 100;
+    }
+  }
+
+  @media(max-width: 640px) {
+    #nav {
+      & > ul {
+        & > li {
+          font-size: 16px;
+          line-height: 1;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.support {
+  width: 21px;
+  height: 20px;
+  @media(max-width: 991px) {
+    display: none;
+  }
+}
+
+.info {
+  width: 13px;
+  height: 13px;
+  fill-opacity: 0;
+  stroke: #1C85E8;
+  margin-right: 5px;
+}
+
+.newlink {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+}

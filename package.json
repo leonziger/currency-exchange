@@ -1,0 +1,52 @@
+{
+  "name": "currency-exchnage",
+  "version": "0.1.0",
+  "author": "Leonid Zichkov",
+  "private": true,
+  "homepage": "https://leonziger.github.io/currency-exchnage",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonziger/currency-exchnage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leonziger/currency-exchnage/issues"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "deploy": "gh-pages -d ./public"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "cross-env": "^5.1.4",
+    "del": "^2.2.2",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-bro": "^1.0.3",
+    "gulp-csslint": "^1.0.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-svg-symbols": "^3.1.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-tinypng-nokey": "^1.0.4",
+    "gulp-uglify": "^3.0.0",
+    "panini": "^1.6.3"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "jquery": "^3.3.1",
+    "vanilla-text-mask": "^5.1.1",
+    "vex-js": "^4.1.0"
+  }
+}

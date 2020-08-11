@@ -1,0 +1,27 @@
+<header class="main-header">
+    <div class="container main-header__container">
+        <div class="main-header__menu-toggle">
+            {{> menu-toggle }}
+        </div>
+
+        <a href="/" class="logo">
+            <img src="./images/logo.png" alt="">
+        </a>
+        <div class="main-header__nav main-menu">
+            {{> nav }}
+        </div>
+        <div class="main-header__auth-toggle">
+            {{> auth-toggle }}
+        </div>
+        <div class="main-header__auth auth-menu">
+            <nav id="auth" class="main-header__auth-menu">
+                <ul>
+                    <li><a href="#" class="main-header__auth-link">Войти</a></li>
+                    <li><a href="#" class="main-header__auth-link blue">Создать аккаунт</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+

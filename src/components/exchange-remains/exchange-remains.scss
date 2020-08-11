@@ -1,0 +1,38 @@
+.exchange-remains {
+  margin-left: -2px;
+
+  .exchange-list__item-label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .exchange-list__item {
+    &:hover {
+      .exchange-list__item-label {
+        &:before {
+          opacity: 0;
+        }
+      }
+
+    }
+  }
+
+  .exchange-list__item-checkbox {
+    display: none;
+
+    &:checked {
+      + .exchange-list__item-label {
+        background: #F2F6FF;
+
+        &:before {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 0;
+        }
+      }
+
+    }
+  }
+}

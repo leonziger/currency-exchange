@@ -1,0 +1,71 @@
+.auth-toggle{
+  position: relative;
+  height: 16px;
+  width: 24px;
+  cursor: pointer;
+  z-index: 300;
+  transition: 0.6s;
+
+  @media(max-width: 1200px){
+    display: flex;
+    align-self: center;
+  }
+
+  span{
+    position: absolute;
+    left:0; right:0;
+    top: 0; bottom: 0;
+    height: 2px;
+    margin: auto;
+    background: #1A1A1A;
+    border-radius: 5px;
+    transition: .4s;
+  }
+
+  &:before{
+    content:'';
+    position: absolute;
+    left:0; right:0;
+    top: 0;
+    height: 2px;
+    background: #1A1A1A;
+    border-radius: 5px;
+    transition: .4s;
+
+  }
+
+  &:after{
+    content:'';
+    position: absolute;
+    left:0; right:0;
+    bottom: 0;
+    height: 2px;
+    background: #1A1A1A;
+    border-radius: 5px;
+    transition: .4s;
+  }
+
+  &_active{
+    span{
+      opacity:0;
+    }
+
+    &:before{
+      left: 5px;
+      transform-origin: top left;
+      transform: rotate(45deg);
+      width: 20px;
+      background: #1A1A1A;
+      height: 3px;
+    }
+
+    &:after{
+      left: 5px;
+      transform: rotate(-45deg);
+      transform-origin: bottom left;
+      width: 20px;
+      background: #1A1A1A;
+      height: 3px;
+    }
+  }
+}

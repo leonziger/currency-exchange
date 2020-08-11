@@ -1,0 +1,8 @@
+node_modules
+*.map
+*.log
+.idea
+.gulp
+package-lock.json
+yarn.lock
+/public

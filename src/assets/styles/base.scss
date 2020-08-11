@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: none;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: #23292e;
+  letter-spacing: 0.32px;
+
+  @media(max-width: 375px){
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+input{
+  border: 0;
+  outline: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  font: 400 13px/1.25 'Proxima Nova Rg', sans-serif;
+  color: #394247;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: #394247;
+  background-color: #E5E5E5;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+hr {
+  border-top: 0;
+  border-color: #8c8c8c;
+}
+
+a {
+  color: #1C85E8;
+  cursor: default;
+}
+
+a[href] {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: $delay;
+}
+
+.h2 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #1A1A1A;
+  margin-bottom: 13px;
+
+  @media(max-width: 575px) {
+    font-size: 18px;
+  }
+
+  @media(max-width: 414px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  &.menu-open.auth-open,
+  &.auth-open.menu-open {
+    overflow-y: hidden;
+  }
+}

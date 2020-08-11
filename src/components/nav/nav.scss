@@ -1,0 +1,39 @@
+#nav {
+  font-weight: 600;
+  letter-spacing: 0.015em;
+
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+
+    & > li {
+      padding: 0 13px;
+      display: flex;
+
+      @media(max-width: 991px) {
+        padding: 0 8px;
+      }
+
+      & > a {
+        display: flex;
+        align-items: center;
+        color: #1A1A1A;
+        text-decoration: none;
+        transition: $delay;
+
+        svg {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          color: #1C85E8;
+
+          svg {
+            stroke: #1C85E8;
+          }
+        }
+      }
+    }
+  }
+
+}
