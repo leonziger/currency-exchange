@@ -1,0 +1,50 @@
+<form action="#" class="exchange-form">
+    <div class="exchange-form__exchange">
+        <div class="h2 exchange-form__subtitle">Сумма обмена</div>
+        <div class="exchange-form__line">
+            <label for="change" class="exchange-form__label">Отдаете (QIWI RUB)</label>
+            <div class="exchange-form__field-wrap">
+                <input name="change" id="change" type="text" class="exchange-form__field field-exchange" placeholder="Min: 5000; Max: 100000">
+                <img src="./images/qiwi.png" alt="" class="exchange-form__change">
+            </div>
+        </div>
+        <div class="exchange-form__line">
+            <label for="receive" class="exchange-form__label">Получаете (Яндекс.Деньги)</label>
+            <div class="exchange-form__field-wrap">
+                <input name="receive" id="receive" type="text" class="exchange-form__field field-exchange" placeholder="Min: 4850.00; Max: 97000.00">
+                <img src="./images/yandexmoney.png" alt="" class="exchange-form__change">
+            </div>
+        </div>
+    </div>
+    <div class="exchange-form__props">
+        <div class="h2 exchange-form__props-title">Реквизиты</div>
+        <div class="exchange-form__line">
+            <label for="change-wallet" class="exchange-form__label">QIWI.кошелек (без “+”)</label>
+            <div class="exchange-form__field-wrap">
+                <input name="change-wallet" id="change-wallet" type="text" class="exchange-form__field field-wallet" placeholder="Пример: 38066..., 7916..., ...">
+                <img src="./images/wallet.svg" alt="" class="exchange-form__wallet">
+            </div>
+        </div>
+        <div class="exchange-form__line">
+            <label for="receive-wallet" class="exchange-form__label">Яндекс.Счет</label>
+            <div class="exchange-form__field-wrap">
+                <input name="receive-wallet" id="receive-wallet" type="text" class="exchange-form__field field-wallet" placeholder="Пример: 410011234567890">
+                <img src="./images/wallet.svg" alt="" class="exchange-form__wallet">
+            </div>
+        </div>
+        <div class="exchange-form__line">
+            <label for="email" class="exchange-form__label">E-mail</label>
+            <div class="exchange-form__field-wrap">
+                <input name="email" id="email" type="text" class="exchange-form__field field-wallet" placeholder="user@mail.com">
+                <img src="./images/email.svg" alt="" class="exchange-form__wallet">
+            </div>
+        </div>
+    </div>
+    <div class="exchange-form__agreement">
+        <input id="agreement" type="checkbox" class="exchange-form__agreement-checkbox">
+        <label for="agreement" class="exchange-form__agreement-label">
+            Я согласен с <a href="#">условиями и правилами сервиса</a>
+        </label>
+    </div>
+    <button class="the-button exchange-form__submit" type="submit" onclick="return false">Обменять</button>
+</form>

@@ -12,10 +12,18 @@
   fill-opacity: 0;
   stroke: #1C85E8;
   margin-right: 5px;
+
+  @media(max-width: 575px) {
+    display: none;
+  }
 }
 
 .newlink {
   width: 12px;
   height: 12px;
   margin-left: 5px;
+
+  @media(max-width: 575px) {
+    display: none;
+  }
 }

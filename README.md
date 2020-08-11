@@ -1,4 +1,4 @@
-# Currency exchnage
+# Currency exchange
 
 ### Developing
 

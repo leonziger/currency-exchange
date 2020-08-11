@@ -1,15 +1,15 @@
 {
-  "name": "currency-exchnage",
+  "name": "currency-exchange",
   "version": "0.1.0",
   "author": "Leonid Zichkov",
   "private": true,
-  "homepage": "https://leonziger.github.io/currency-exchnage",
+  "homepage": "https://leonziger.github.io/currency-exchange",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leonziger/currency-exchnage.git"
+    "url": "git+https://github.com/leonziger/currency-exchange.git"
   },
   "bugs": {
-    "url": "https://github.com/leonziger/currency-exchnage/issues"
+    "url": "https://github.com/leonziger/currency-exchange/issues"
   },
   "scripts": {
     "start": "gulp",
@@ -25,7 +25,7 @@
     "browser-sync": "^2.18.13",
     "cross-env": "^5.1.4",
     "del": "^2.2.2",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.0",
     "gulp-bro": "^1.0.3",
     "gulp-csslint": "^1.0.1",

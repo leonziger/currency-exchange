@@ -1,0 +1,141 @@
+.exchange-form {
+
+  &__line {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 17px;
+  }
+
+  &__label {
+    letter-spacing: 0.03em;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__field {
+    background: #F2F6FF;
+    height: 48px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      color: #9B9B9B;
+    }
+
+    &-wrap {
+      position: relative;
+    }
+  }
+
+  &__change {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__wallet {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__props {
+
+    &-title {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__agreement {
+    font-family: 'Microsoft Sans Serif', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: 0.035em;
+    color: #394247;
+    margin-top: -10px;
+    margin-left: -1px;
+    position: relative;
+    margin-bottom: 23px;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      content: '';
+      width: 17px;
+      height: 17px;
+      border: 0.5px solid #394247;
+      border-radius: 2px;
+    }
+
+    &:after {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      display: block;
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-image: url(../images/agreement.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: $delay;
+      opacity: 0;
+    }
+
+    &-checkbox {
+      display: none;
+
+      &:checked {
+        + .exchange-form__agreement-label {
+
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &-label {
+      display: block;
+      padding-left: 27px;
+      padding-top: 5px;
+
+      @media(max-width: 330px) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &__submit {
+    margin: 0 auto;
+
+    @media(max-width: 375px) {
+      padding: 16px;
+      width: 100%;
+    }
+  }
+}
+
+.field {
+  &-exchange {
+    padding: 15px 13px;
+  }
+
+  &-wallet {
+    padding: 15px 39px;
+  }
+}
